@@ -14,4 +14,4 @@ for i in m:
 dic = collections.Counter(new_m)
 for key in dic:
     print(key,dic[key])
-
+    
