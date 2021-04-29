@@ -27,7 +27,6 @@ for i in range(scale + 1):
     time.sleep(0.2)
 print("\n"+"执行结束".center(scale//2,'-'))
 
-'''
 #修改，适当降低开始阶段的进展速度，适当加快末尾阶段的进展速度
 import time
 scale=50
@@ -44,4 +43,3 @@ for i in range(scale+1):
     print("\r{:^3.0f}%[{}->{}]{:.2f}s".format(c,a,b,dur),end="")
     time.sleep(0.01)
 print("\n"+"执行成功".center(scale//2,'-'))
-'''
