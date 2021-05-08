@@ -5,6 +5,7 @@
 的电影与该用户最接近，然后从那个用户喜欢的电影中选取一个当前用户还没看
 过的电影，进行推荐。
 '''
+
 from random import randrange
 # 其他用户喜欢看的电影清单
 data = {'user'+str(i):{'film'+str(randrange(1, 10))\
