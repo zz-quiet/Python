@@ -13,6 +13,6 @@ for i in range(x):
         if a>b:
             print("%2d-%2d=%3d" %(a,b,a-b),end="  ")
         else:
-            print("%2d-%2d=%3d" %(b,a,b-a),end="   ")
+            print("%2d-%2d=%3d" %(b,a,b-a),end="  ")
     if (i+1)%2 == 0:
         print('')
