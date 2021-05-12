@@ -7,12 +7,18 @@ for i in range(x):
     a = random.randint(1,100)
     b = random.randint(1,100)
     op = random.choice("+-")
-    if op == "+":
-        print("%2d+%2d=%3d" %(a,b,a+b),end="  ")
-    if op == "-":
+    if a+b>100:
         if a>b:
             print("%2d-%2d=%3d" %(a,b,a-b),end="  ")
         else:
             print("%2d-%2d=%3d" %(b,a,b-a),end="  ")
+    else:
+        if op == "+":
+            print("%2d+%2d=%3d" %(a,b,a+b),end="  ")
+        if op == "-":
+            if a>b:
+                print("%2d-%2d=%3d" %(a,b,a-b),end="  ")
+            else:
+                print("%2d-%2d=%3d" %(b,a,b-a),end="  ")
     if (i+1)%2 == 0:
         print('')
