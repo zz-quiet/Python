@@ -7,8 +7,8 @@ def search():
     for line in f1.readlines():
         # 去除每一行末尾的换行符
         line = line.replace("\n","")
-        # 将每行的英文和中文分开，分隔符是英文逗号
-        line = list(line.split(','))
+        # 将每行的英文和中文分开，分隔符是空格英
+        line = list(line.split(' '))
         # 每行开头的英文为键，后面的中文为值
         key = line[0]
         value = line[1:]
@@ -28,7 +28,7 @@ def add():
     f2 = open("词典.txt",'r')
     for line in f2.readlines():
         line = line.replace("\n","")
-        line = list(line.split(','))
+        line = list(line.split(' '))
         key = line[0]
         value = line[1:]
         dic[key] = value
@@ -42,7 +42,7 @@ def add():
     if flag != 1:
         f3 = open("词典.txt",'a')
         mean = input("该单词释义为（多个意思用中文逗号隔开）：")
-        f3.write(ww + ',' + mean + '\n')
+        f3.write(ww + ' ' + mean + '\n')
         f3.close
         exit()
 
